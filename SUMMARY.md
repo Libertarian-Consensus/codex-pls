@@ -4,7 +4,7 @@
 
 * [Início](README.md)
 * [Disclaimer](DISCLAIMER.md)
-* [Sobre a PLS](inicio/sobre-nos.md)
+* [Sobre o Codex PLS](inicio/sobre-nos.md)
 * [Como Participar](inicio/como-participar.md)
 * [Perguntas Frequentes](inicio/perguntas-frequentes.md)
 
