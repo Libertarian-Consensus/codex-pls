@@ -4,14 +4,16 @@ icon: house-chimney-window
 
 # Inicio
 
-Bem-vindo ao Codex PLS, uma biblioteca de contratos modulares que implementa o protocolo da Private Law Society (PLS). A PLS é um sistema tecnológico que facilita contratos privados sem participação do Estado, utilizando Bitcoin como colateral e arbitragem privada para resolução de disputas. Aqui, contratos voluntários, reputação e garantias formam a base de uma rede descentralizada.
+Bem-vindo ao **Codex PLS**, uma biblioteca de contratos modulares que **utiliza** o protocolo da [Private Law Society (PLS)](https://github.com/PrivateLawSociety/pls-protocol). 
+
+**Importante**: Este não é o sistema oficial da PLS, mas sim um sistema que **implementa e usa** o protocolo PLS para criar contratos privados sem participação do Estado, utilizando Bitcoin como colateral e arbitragem privada para resolução de disputas.
 
 ## O que oferecemos
 
 * **Contratos Modulares**: Cláusulas reutilizáveis para diferentes tipos de acordos.
-* **Protocolo PLS**: Implementação completa do protocolo de contratos privados.
-* **Integração WoT**: Sistema de reputação para redução de riscos.
-* **Integração BJP**: Colateral em Bitcoin para garantia de execução.
-* **Arbitragem Privada**: Resolução de disputas sem participação do Estado.
+* **Implementação do Protocolo PLS**: Utiliza o protocolo oficial da [PLS](https://github.com/PrivateLawSociety/pls-protocol)
+* **Integração WoT**: Sistema de reputação baseado no [Web of Trust da PLS](https://github.com/PrivateLawSociety/pls-wot)
+* **Integração BJP**: Colateral em Bitcoin baseado no [Bitcoin Justice Protocol da PLS](https://github.com/PrivateLawSociety/pls-bjp)
+* **Arbitragem Privada**: Resolução de disputas sem participação do Estado, conforme protocolo PLS.
 
 Explore mais em [Protocolo PLS](fundamentos/protocolo-pls.md) ou veja [Cláusulas Modulares](clausulas/colateral.md).

@@ -2,7 +2,9 @@
 
 ## Visão Geral
 
-O Protocolo da Private Law Society (PLS) é um sistema de contratos privados que opera sem participação do Estado, utilizando Bitcoin como colateral e arbitragem privada para resolução de disputas.
+Este documento descreve como o **Codex PLS** implementa o protocolo da [Private Law Society (PLS)](https://github.com/PrivateLawSociety/pls-protocol), um sistema de contratos privados que opera sem participação do Estado, utilizando Bitcoin como colateral e arbitragem privada para resolução de disputas.
+
+**Nota**: Este é um sistema que **usa** o protocolo PLS, não o sistema oficial da PLS.
 
 ## Componentes Principais
 
@@ -118,9 +120,14 @@ stateDiagram-v2
 - Interface para criação e gerenciamento de contratos
 - Integração com carteiras Bitcoin
 
-## Referências
+## Referências Oficiais da PLS
 
-- [PLIP-01](https://github.com/PrivateLawSociety/pls-protocol/blob/main/plips/01.md) - Especificação do protocolo de contratos
-- [PLIP-02](https://github.com/PrivateLawSociety/pls-protocol/blob/main/plips/02.md) - Especificação do protocolo de comunicação
-- [PLS-BJP](https://github.com/PrivateLawSociety/pls-bjp) - Implementação do protocolo
-- [PLS-WoT](https://github.com/PrivateLawSociety/pls-wot) - Sistema de reputação
+- [PLIP-01](https://github.com/PrivateLawSociety/pls-protocol/blob/main/plips/01.md) - Especificação oficial do protocolo de contratos
+- [PLIP-02](https://github.com/PrivateLawSociety/pls-protocol/blob/main/plips/02.md) - Especificação oficial do protocolo de comunicação
+- [PLS-BJP](https://github.com/PrivateLawSociety/pls-bjp) - Implementação oficial do protocolo
+- [PLS-WoT](https://github.com/PrivateLawSociety/pls-wot) - Sistema oficial de reputação
+- [PLS-Protocol](https://github.com/PrivateLawSociety/pls-protocol) - Repositório oficial do protocolo
+
+## Disclaimer
+
+Este Codex PLS é uma implementação independente que utiliza o protocolo oficial da PLS. Para informações oficiais, sempre consulte os repositórios oficiais da Private Law Society.

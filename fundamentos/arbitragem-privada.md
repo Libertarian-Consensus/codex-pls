@@ -2,7 +2,9 @@
 
 ## Papel da Private Law Society (PLS)
 
-A **Private Law Society (PLS)** é um **protocolo e sistema tecnológico**, não uma entidade que reconhece ou certifica árbitros. A PLS fornece:
+A [**Private Law Society (PLS)**](https://github.com/PrivateLawSociety/pls-protocol) é um **protocolo e sistema tecnológico oficial**, não uma entidade que reconhece ou certifica árbitros. A PLS fornece:
+
+**Nota**: Este Codex PLS é uma implementação independente que utiliza o protocolo oficial da PLS.
 
 ### 1. Infraestrutura Técnica
 - Protocolo de contratos (PLIP-01)
@@ -11,13 +13,13 @@ A **Private Law Society (PLS)** é um **protocolo e sistema tecnológico**, não
 - Ferramentas para criação e gerenciamento de contratos
 
 ### 2. Sistema de Reputação
-- Web of Trust (WoT) para avaliação de reputação
+- [Web of Trust (WoT)](https://github.com/PrivateLawSociety/pls-wot) para avaliação de reputação
 - Registro público de transações e avaliações
 - Sistema de pontuação baseado em histórico
 
 ### 3. Mecanismos de Execução
 - Carteiras multisig para colateral
-- Protocolo Bitcoin Justice Protocol (BJP)
+- [Protocolo Bitcoin Justice Protocol (BJP)](https://github.com/PrivateLawSociety/pls-bjp)
 - Sistema de assinaturas digitais
 
 ## Responsabilidade das Partes
@@ -115,6 +117,10 @@ As partes devem considerar:
 
 ## Conclusão
 
-A PLS é um **sistema tecnológico** que facilita a arbitragem privada, mas **não controla ou certifica árbitros**. A responsabilidade pela escolha de árbitros qualificados e pela qualidade da arbitragem é das próprias partes, que devem usar o sistema de reputação e outras ferramentas disponíveis para fazer escolhas informadas.
+A [PLS](https://github.com/PrivateLawSociety/pls-protocol) é um **sistema tecnológico oficial** que facilita a arbitragem privada, mas **não controla ou certifica árbitros**. A responsabilidade pela escolha de árbitros qualificados e pela qualidade da arbitragem é das próprias partes, que devem usar o sistema de reputação e outras ferramentas disponíveis para fazer escolhas informadas.
 
 A força da arbitragem privada na PLS vem da **transparência**, **reputação** e **mecanismos de execução tecnológicos**, não de uma autoridade central que reconhece árbitros.
+
+## Disclaimer
+
+Este Codex PLS é uma implementação independente que utiliza o protocolo oficial da PLS. Para informações oficiais sobre arbitragem privada, consulte os repositórios oficiais da [Private Law Society](https://github.com/PrivateLawSociety).
