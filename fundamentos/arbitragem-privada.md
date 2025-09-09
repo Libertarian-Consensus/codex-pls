@@ -2,7 +2,7 @@
 
 ## Papel da Private Law Society (PLS)
 
-A [**Private Law Society (PLS)**](https://github.com/PrivateLawSociety/pls-protocol) é um **protocolo e sistema tecnológico oficial**, não uma entidade que reconhece ou certifica árbitros. A PLS fornece:
+A [**Private Law Society (PLS)**](http://privatelawsociety.net) é um **protocolo e sistema tecnológico oficial**, não uma entidade que reconhece ou certifica árbitros. A PLS fornece:
 
 **Nota**: Este Codex PLS é uma implementação independente que utiliza o protocolo oficial da PLS.
 
@@ -117,10 +117,10 @@ As partes devem considerar:
 
 ## Conclusão
 
-A [PLS](https://github.com/PrivateLawSociety/pls-protocol) é um **sistema tecnológico oficial** que facilita a arbitragem privada, mas **não controla ou certifica árbitros**. A responsabilidade pela escolha de árbitros qualificados e pela qualidade da arbitragem é das próprias partes, que devem usar o sistema de reputação e outras ferramentas disponíveis para fazer escolhas informadas.
+A [PLS](http://privatelawsociety.net) é um **sistema tecnológico oficial** que facilita a arbitragem privada, mas **não controla ou certifica árbitros**. A responsabilidade pela escolha de árbitros qualificados e pela qualidade da arbitragem é das próprias partes, que devem usar o sistema de reputação e outras ferramentas disponíveis para fazer escolhas informadas.
 
 A força da arbitragem privada na PLS vem da **transparência**, **reputação** e **mecanismos de execução tecnológicos**, não de uma autoridade central que reconhece árbitros.
 
 ## Disclaimer
 
-Este Codex PLS é uma implementação independente que utiliza o protocolo oficial da PLS. Para informações oficiais sobre arbitragem privada, consulte os repositórios oficiais da [Private Law Society](https://github.com/PrivateLawSociety).
+Este Codex PLS é uma implementação independente que utiliza o protocolo oficial da PLS. Para informações oficiais sobre arbitragem privada, consulte o [site oficial da Private Law Society](http://privatelawsociety.net) e os [repositórios oficiais no GitHub](https://github.com/PrivateLawSociety).

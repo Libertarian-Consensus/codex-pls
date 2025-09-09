@@ -2,12 +2,13 @@
 
 ## Importante: Este não é o sistema oficial da PLS
 
-O **Codex PLS** é uma implementação independente que **utiliza** o protocolo da [Private Law Society (PLS)](https://github.com/PrivateLawSociety/pls-protocol), mas **não é** o sistema oficial da PLS.
+O **Codex PLS** é uma implementação independente que **utiliza** o protocolo da [Private Law Society (PLS)](http://privatelawsociety.net), mas **não é** o sistema oficial da PLS.
 
 ## Diferenças Importantes
 
 ### Sistema Oficial da PLS
-- **Repositório**: [Private Law Society](https://github.com/PrivateLawSociety)
+- **Site Oficial**: [Private Law Society](http://privatelawsociety.net)
+- **GitHub**: [Private Law Society](https://github.com/PrivateLawSociety)
 - **Protocolo**: [pls-protocol](https://github.com/PrivateLawSociety/pls-protocol)
 - **BJP**: [pls-bjp](https://github.com/PrivateLawSociety/pls-bjp)
 - **WoT**: [pls-wot](https://github.com/PrivateLawSociety/pls-wot)
@@ -38,10 +39,11 @@ O **Codex PLS** é uma implementação independente que **utiliza** o protocolo 
 
 Para informações oficiais sobre a Private Law Society, sempre consulte:
 
+- **Site Oficial**: [Private Law Society](http://privatelawsociety.net)
+- **GitHub**: [Private Law Society](https://github.com/PrivateLawSociety)
 - **Protocolo Oficial**: [pls-protocol](https://github.com/PrivateLawSociety/pls-protocol)
 - **Bitcoin Justice Protocol**: [pls-bjp](https://github.com/PrivateLawSociety/pls-bjp)
 - **Web of Trust**: [pls-wot](https://github.com/PrivateLawSociety/pls-wot)
-- **Organização**: [PrivateLawSociety](https://github.com/PrivateLawSociety)
 
 ## Uso Responsável
 
@@ -61,7 +63,7 @@ Este Codex PLS é um projeto de código aberto que visa facilitar o uso do proto
 
 Para questões sobre este Codex PLS, use os canais deste repositório.
 
-Para questões sobre o protocolo oficial da PLS, consulte os repositórios oficiais da [Private Law Society](https://github.com/PrivateLawSociety).
+Para questões sobre o protocolo oficial da PLS, consulte o [site oficial da Private Law Society](http://privatelawsociety.net) e os [repositórios oficiais no GitHub](https://github.com/PrivateLawSociety).
 
 ---
 

@@ -2,7 +2,7 @@
 
 ## Visão Geral
 
-Este documento descreve como o **Codex PLS** implementa o protocolo da [Private Law Society (PLS)](https://github.com/PrivateLawSociety/pls-protocol), um sistema de contratos privados que opera sem participação do Estado, utilizando Bitcoin como colateral e arbitragem privada para resolução de disputas.
+Este documento descreve como o **Codex PLS** implementa o protocolo da [Private Law Society (PLS)](http://privatelawsociety.net), um sistema de contratos privados que opera sem participação do Estado, utilizando Bitcoin como colateral e arbitragem privada para resolução de disputas.
 
 **Nota**: Este é um sistema que **usa** o protocolo PLS, não o sistema oficial da PLS.
 
@@ -122,6 +122,8 @@ stateDiagram-v2
 
 ## Referências Oficiais da PLS
 
+- [Site Oficial PLS](http://privatelawsociety.net) - Site principal da Private Law Society
+- [GitHub PLS](https://github.com/PrivateLawSociety) - Organização oficial no GitHub
 - [PLIP-01](https://github.com/PrivateLawSociety/pls-protocol/blob/main/plips/01.md) - Especificação oficial do protocolo de contratos
 - [PLIP-02](https://github.com/PrivateLawSociety/pls-protocol/blob/main/plips/02.md) - Especificação oficial do protocolo de comunicação
 - [PLS-BJP](https://github.com/PrivateLawSociety/pls-bjp) - Implementação oficial do protocolo
