@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "state": "Signed",
+  "createdAt": 1640995200,
+  "document": {
+    "fileHash": "sha256_hash_do_documento_contrato_parceria_p2p",
+    "pubkeys": {
+      "clients": [
+        "02a1b2c3d4e5f6789012345678901234567890123456789012345678901234567890",
+        "03b2c3d4e5f6789012345678901234567890123456789012345678901234567890123"
+      ],
+      "arbitrators": [
+        "02c3d4e5f6789012345678901234567890123456789012345678901234567890123456"
+      ]
+    }
+  },
+  "collateral": {
+    "network": "bitcoin",
+    "pubkeys": {
+      "clients": [
+        "02a1b2c3d4e5f6789012345678901234567890123456789012345678901234567890",
+        "03b2c3d4e5f6789012345678901234567890123456789012345678901234567890123"
+      ],
+      "arbitrators": [
+        "02c3d4e5f6789012345678901234567890123456789012345678901234567890123456"
+      ]
+    },
+    "arbitratorsQuorum": 1,
+    "multisigAddress": "bc1p5d7rjsw7zt6rxymyav8zh46jrzgj8pg5wug9v2sxet4k9nyz3t9s6v0sqf"
+  },
+  "communication": {
+    "type": "nostr",
+    "identifiers": {
+      "clients": [
+        "npub1a1b2c3d4e5f6789012345678901234567890123456789012345678901234567890",
+        "npub1b2c3d4e5f6789012345678901234567890123456789012345678901234567890123"
+      ],
+      "arbitrators": [
+        "npub1c3d4e5f6789012345678901234567890123456789012345678901234567890123456"
+      ],
+      "mediators": []
+    }
+  },
+  "metadata": {
+    "contractType": "p2p_partnership",
+    "wot": {
+      "enabled": true,
+      "reputationThreshold": 30,
+      "reputationReduction": 5,
+      "sellerReputation": 45,
+      "buyerReputation": 35,
+      "arbitratorReputation": 80
+    },
+    "insurance": {
+      "enabled": true,
+      "fundAddress": "bc1p5d7rjsw7zt6rxymyav8zh46jrzgj8pg5wug9v2sxet4k9nyz3t9s6v0sqf",
+      "coverageLimit": 0.02,
+      "premiumRate": 0.5,
+      "premiumPaid": 0.005
+    },
+    "association": {
+      "enabled": true,
+      "associationName": "Libertas",
+      "associationReduction": 3
+    },
+    "terms": {
+      "partnershipDuration": 30,
+      "maxTransactions": 10,
+      "maxBitcoinAmount": 0.1,
+      "maxFiatAmount": 5000,
+      "currency": "BRL",
+      "paymentMethod": "PIX",
+      "collateralAmount": 0.02,
+      "collateralAdjusted": 0.0184,
+      "totalReduction": 8
+    }
+  },
+  "signatures": {
+    "02a1b2c3d4e5f6789012345678901234567890123456789012345678901234567890": "304402203f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f02203f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f",
+    "03b2c3d4e5f6789012345678901234567890123456789012345678901234567890123": "304402203f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f02203f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f",
+    "02c3d4e5f6789012345678901234567890123456789012345678901234567890123456": "304402203f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f02203f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f"
+  }
+}

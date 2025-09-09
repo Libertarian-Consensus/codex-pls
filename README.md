@@ -4,12 +4,14 @@ icon: house-chimney-window
 
 # Inicio
 
-Bem-vindo ao Pacto Voluntário, uma associação privada que opera sob os princípios da Private Law Society (PLS). Nosso foco é criar um sistema de transações seguras e confiáveis usando tecnologias como Bitcoin, Nostr e carteiras multisig. Aqui, contratos voluntários, reputação e garantias formam a base de uma rede descentralizada.
+Bem-vindo ao Codex PLS, uma biblioteca de contratos modulares que implementa o protocolo da Private Law Society (PLS). A PLS é um sistema tecnológico que facilita contratos privados sem participação do Estado, utilizando Bitcoin como colateral e arbitragem privada para resolução de disputas. Aqui, contratos voluntários, reputação e garantias formam a base de uma rede descentralizada.
 
 ## O que oferecemos
 
-* **Contratos Privados**: Acordos seguros para empréstimos e outras transações.
-* **Reputação**: Um sistema para avaliar e garantir a credibilidade dos membros.
-* **Fundo de Seguro**: Proteção opcional contra riscos em transações.
+* **Contratos Modulares**: Cláusulas reutilizáveis para diferentes tipos de acordos.
+* **Protocolo PLS**: Implementação completa do protocolo de contratos privados.
+* **Integração WoT**: Sistema de reputação para redução de riscos.
+* **Integração BJP**: Colateral em Bitcoin para garantia de execução.
+* **Arbitragem Privada**: Resolução de disputas sem participação do Estado.
 
-Explore mais em [Sobre](inicio/sobre-nos.md) ou veja [Como Participar](inicio/como-participar.md).
+Explore mais em [Protocolo PLS](fundamentos/protocolo-pls.md) ou veja [Cláusulas Modulares](clausulas/colateral.md).

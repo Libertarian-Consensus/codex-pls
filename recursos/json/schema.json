@@ -1,0 +1,310 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PLS Contract Schema",
+  "description": "Schema para validação de contratos PLS conforme PLIP-01",
+  "type": "object",
+  "required": ["version", "state", "createdAt", "document", "collateral", "signatures"],
+  "properties": {
+    "version": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Versão do protocolo PLS"
+    },
+    "state": {
+      "type": "string",
+      "enum": ["Created", "PartAccepted", "Accepted", "PartSigned", "Signed", "PartFunded", "Funded", "Finished"],
+      "description": "Estado atual do contrato"
+    },
+    "createdAt": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Timestamp Unix de criação do contrato"
+    },
+    "lastStateChange": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Timestamp da última mudança de estado"
+    },
+    "stateHistory": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["state", "timestamp", "actor"],
+        "properties": {
+          "state": {
+            "type": "string",
+            "enum": ["Created", "PartAccepted", "Accepted", "PartSigned", "Signed", "PartFunded", "Funded", "Finished"]
+          },
+          "timestamp": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "actor": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{66}$"
+          }
+        }
+      },
+      "description": "Histórico de mudanças de estado"
+    },
+    "document": {
+      "type": "object",
+      "required": ["fileHash", "pubkeys"],
+      "properties": {
+        "fileHash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$",
+          "description": "Hash SHA-256 do documento do contrato"
+        },
+        "pubkeys": {
+          "type": "object",
+          "required": ["clients", "arbitrators"],
+          "properties": {
+            "clients": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{66}$"
+              },
+              "minItems": 2,
+              "description": "Chaves públicas dos clientes"
+            },
+            "arbitrators": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{66}$"
+              },
+              "minItems": 1,
+              "description": "Chaves públicas dos árbitros"
+            }
+          }
+        }
+      }
+    },
+    "collateral": {
+      "type": "object",
+      "required": ["network", "pubkeys", "arbitratorsQuorum", "multisigAddress"],
+      "properties": {
+        "network": {
+          "type": "string",
+          "enum": ["bitcoin", "liquid"],
+          "description": "Rede blockchain para o colateral"
+        },
+        "pubkeys": {
+          "type": "object",
+          "required": ["clients", "arbitrators"],
+          "properties": {
+            "clients": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Chaves para criação da multisig"
+            },
+            "arbitrators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Chaves dos árbitros para multisig"
+            }
+          }
+        },
+        "arbitratorsQuorum": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Número mínimo de árbitros necessários"
+        },
+        "multisigAddress": {
+          "type": "string",
+          "description": "Endereço da carteira multisig"
+        }
+      }
+    },
+    "communication": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["nostr"],
+          "description": "Tipo de protocolo de comunicação"
+        },
+        "identifiers": {
+          "type": "object",
+          "properties": {
+            "clients": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Identificadores dos clientes"
+            },
+            "arbitrators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Identificadores dos árbitros"
+            },
+            "mediators": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Identificadores dos mediadores"
+            }
+          }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "contractType": {
+          "type": "string",
+          "enum": ["loan_simple", "loan_wot", "loan_hybrid", "insurance_mutual", "p2p_partnership"],
+          "description": "Tipo de contrato"
+        },
+        "wot": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "reputationThreshold": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "reputationReduction": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "creditorReputation": {
+              "type": "integer"
+            },
+            "debtorReputation": {
+              "type": "integer"
+            },
+            "arbitratorReputation": {
+              "type": "integer"
+            }
+          }
+        },
+        "insurance": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "fundAddress": {
+              "type": "string"
+            },
+            "coverageLimit": {
+              "type": "number"
+            },
+            "premiumRate": {
+              "type": "number"
+            },
+            "premiumPaid": {
+              "type": "number"
+            },
+            "participantCount": {
+              "type": "integer"
+            },
+            "totalFundValue": {
+              "type": "number"
+            }
+          }
+        },
+        "association": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "associationName": {
+              "type": "string"
+            },
+            "associationReduction": {
+              "type": "number"
+            }
+          }
+        },
+        "terms": {
+          "type": "object",
+          "properties": {
+            "loanAmount": {
+              "type": "number"
+            },
+            "currency": {
+              "type": "string"
+            },
+            "collateralAmount": {
+              "type": "number"
+            },
+            "collateralAdjusted": {
+              "type": "number"
+            },
+            "interestRate": {
+              "type": "number"
+            },
+            "termDays": {
+              "type": "integer"
+            },
+            "totalReduction": {
+              "type": "number"
+            },
+            "partnershipDuration": {
+              "type": "integer"
+            },
+            "maxTransactions": {
+              "type": "integer"
+            },
+            "maxBitcoinAmount": {
+              "type": "number"
+            },
+            "maxFiatAmount": {
+              "type": "number"
+            },
+            "paymentMethod": {
+              "type": "string"
+            },
+            "contractDuration": {
+              "type": "integer"
+            },
+            "renewalTerms": {
+              "type": "string"
+            },
+            "cancellationNotice": {
+              "type": "integer"
+            },
+            "coverageTypes": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "exclusions": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "signatures": {
+      "type": "object",
+      "patternProperties": {
+        "^[0-9a-f]{66}$": {
+          "type": "string",
+          "description": "Assinatura digital da chave pública"
+        }
+      },
+      "description": "Assinaturas digitais das partes"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "state": "Signed",
+  "createdAt": 1640995200,
+  "document": {
+    "fileHash": "sha256_hash_do_documento_contrato_emprestimo_hibrido",
+    "pubkeys": {
+      "clients": [
+        "02a1b2c3d4e5f6789012345678901234567890123456789012345678901234567890",
+        "03b2c3d4e5f6789012345678901234567890123456789012345678901234567890123"
+      ],
+      "arbitrators": [
+        "02c3d4e5f6789012345678901234567890123456789012345678901234567890123456",
+        "03d4e5f678901234567890123456789012345678901234567890123456789012345678"
+      ]
+    }
+  },
+  "collateral": {
+    "network": "bitcoin",
+    "pubkeys": {
+      "clients": [
+        "02a1b2c3d4e5f6789012345678901234567890123456789012345678901234567890",
+        "03b2c3d4e5f6789012345678901234567890123456789012345678901234567890123"
+      ],
+      "arbitrators": [
+        "02c3d4e5f6789012345678901234567890123456789012345678901234567890123456",
+        "03d4e5f678901234567890123456789012345678901234567890123456789012345678"
+      ]
+    },
+    "arbitratorsQuorum": 2,
+    "multisigAddress": "bc1p5d7rjsw7zt6rxymyav8zh46jrzgj8pg5wug9v2sxet4k9nyz3t9s6v0sqf"
+  },
+  "communication": {
+    "type": "nostr",
+    "identifiers": {
+      "clients": [
+        "npub1a1b2c3d4e5f6789012345678901234567890123456789012345678901234567890",
+        "npub1b2c3d4e5f6789012345678901234567890123456789012345678901234567890123"
+      ],
+      "arbitrators": [
+        "npub1c3d4e5f6789012345678901234567890123456789012345678901234567890123456",
+        "npub1d4e5f678901234567890123456789012345678901234567890123456789012345678"
+      ],
+      "mediators": []
+    }
+  },
+  "metadata": {
+    "contractType": "loan_hybrid",
+    "wot": {
+      "enabled": true,
+      "reputationThreshold": 50,
+      "reputationReduction": 10,
+      "creditorReputation": 75,
+      "debtorReputation": 60,
+      "arbitratorReputation": 85
+    },
+    "insurance": {
+      "enabled": true,
+      "fundAddress": "bc1p5d7rjsw7zt6rxymyav8zh46jrzgj8pg5wug9v2sxet4k9nyz3t9s6v0sqf",
+      "coverageLimit": 0.05,
+      "premiumRate": 1.0,
+      "premiumPaid": 0.01
+    },
+    "association": {
+      "enabled": true,
+      "associationName": "Libertas",
+      "associationReduction": 5
+    },
+    "terms": {
+      "loanAmount": 1000,
+      "currency": "BRL",
+      "collateralAmount": 0.01,
+      "collateralAdjusted": 0.0075,
+      "interestRate": 5.0,
+      "termDays": 30,
+      "totalReduction": 25
+    }
+  },
+  "signatures": {
+    "02a1b2c3d4e5f6789012345678901234567890123456789012345678901234567890": "304402203f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f02203f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f",
+    "03b2c3d4e5f6789012345678901234567890123456789012345678901234567890123": "304402203f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f02203f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f",
+    "02c3d4e5f6789012345678901234567890123456789012345678901234567890123456": "304402203f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f02203f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f",
+    "03d4e5f678901234567890123456789012345678901234567890123456789012345678": "304402203f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f02203f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f"
+  }
+}

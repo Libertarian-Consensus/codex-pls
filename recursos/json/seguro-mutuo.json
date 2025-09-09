@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "state": "Signed",
+  "createdAt": 1640995200,
+  "document": {
+    "fileHash": "sha256_hash_do_documento_contrato_seguro_mutuo",
+    "pubkeys": {
+      "clients": [
+        "02a1b2c3d4e5f6789012345678901234567890123456789012345678901234567890"
+      ],
+      "arbitrators": [
+        "02c3d4e5f6789012345678901234567890123456789012345678901234567890123456",
+        "03d4e5f678901234567890123456789012345678901234567890123456789012345678",
+        "02e5f67890123456789012345678901234567890123456789012345678901234567890"
+      ]
+    }
+  },
+  "collateral": {
+    "network": "bitcoin",
+    "pubkeys": {
+      "clients": [
+        "02a1b2c3d4e5f6789012345678901234567890123456789012345678901234567890"
+      ],
+      "arbitrators": [
+        "02c3d4e5f6789012345678901234567890123456789012345678901234567890123456",
+        "03d4e5f678901234567890123456789012345678901234567890123456789012345678",
+        "02e5f67890123456789012345678901234567890123456789012345678901234567890"
+      ]
+    },
+    "arbitratorsQuorum": 2,
+    "multisigAddress": "bc1p5d7rjsw7zt6rxymyav8zh46jrzgj8pg5wug9v2sxet4k9nyz3t9s6v0sqf"
+  },
+  "communication": {
+    "type": "nostr",
+    "identifiers": {
+      "clients": [
+        "npub1a1b2c3d4e5f6789012345678901234567890123456789012345678901234567890"
+      ],
+      "arbitrators": [
+        "npub1c3d4e5f6789012345678901234567890123456789012345678901234567890123456",
+        "npub1d4e5f678901234567890123456789012345678901234567890123456789012345678",
+        "npub1e5f67890123456789012345678901234567890123456789012345678901234567890"
+      ],
+      "mediators": []
+    }
+  },
+  "metadata": {
+    "contractType": "insurance_mutual",
+    "insurance": {
+      "fundAddress": "bc1p5d7rjsw7zt6rxymyav8zh46jrzgj8pg5wug9v2sxet4k9nyz3t9s6v0sqf",
+      "initialContribution": 0.005,
+      "monthlyContribution": 0.001,
+      "coverageLimit": 0.05,
+      "premiumRate": 1.0,
+      "participantCount": 50,
+      "totalFundValue": 0.25
+    },
+    "terms": {
+      "contractDuration": 365,
+      "renewalTerms": "automatic",
+      "cancellationNotice": 30,
+      "coverageTypes": ["default", "fraud", "technical_failure"],
+      "exclusions": ["price_fluctuation", "force_majeure", "negligence"]
+    }
+  },
+  "signatures": {
+    "02a1b2c3d4e5f6789012345678901234567890123456789012345678901234567890": "304402203f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f02203f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f",
+    "02c3d4e5f6789012345678901234567890123456789012345678901234567890123456": "304402203f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f02203f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f",
+    "03d4e5f678901234567890123456789012345678901234567890123456789012345678": "304402203f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f02203f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f",
+    "02e5f67890123456789012345678901234567890123456789012345678901234567890": "304402203f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f02203f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f"
+  }
+}
